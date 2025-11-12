@@ -1,0 +1,306 @@
+{
+  "designSystem": {
+    "name": "High-Stakes Technical Narrative Design System",
+    "version": "1.0",
+    "description": "A bold, technical, high-contrast design system for executive/technical audiences. Emphasizes urgency, precision, and action-oriented messaging.",
+    
+    "corePhilosophy": {
+      "visualTone": "Dark, technical, militaristic precision with high-energy accents",
+      "messagingTone": "Direct, urgent, no-fluff, action-oriented",
+      "targetAudience": "Technical executives, CTOs, VPs of Engineering, founders",
+      "keyPrinciples": [
+        "High contrast (dark backgrounds + bright accents)",
+        "Geometric precision over organic curves",
+        "Monospace fonts for technical credibility",
+        "Minimal decoration, maximum impact",
+        "Urgency-driven CTAs",
+        "Data visualization aesthetics"
+      ]
+    },
+
+    "techStack": {
+      "framework": "Next.js 16.0.0 (App Router)",
+      "language": "TypeScript",
+      "styling": "Tailwind CSS 4",
+      "icons": "lucide-react",
+      "animations": "framer-motion",
+      "utilities": ["clsx", "tailwind-merge"]
+    },
+
+    "colorPalette": {
+      "backgrounds": {
+        "primary": "slate-950",
+        "secondary": "slate-900",
+        "tertiary": "slate-800",
+        "usage": "Deep, near-black backgrounds for maximum contrast"
+      },
+      "accents": {
+        "primary": "amber-500",
+        "secondary": "orange-600",
+        "gradient": "from-amber-500 to-orange-600",
+        "usage": "High-energy CTAs, highlights, interactive elements"
+      },
+      "text": {
+        "primary": "slate-200",
+        "secondary": "slate-300",
+        "tertiary": "slate-400",
+        "muted": "slate-500",
+        "usage": "Light text on dark backgrounds for readability"
+      },
+      "semantic": {
+        "success": "green-500",
+        "error": "red-500",
+        "warning": "amber-500",
+        "info": "blue-500"
+      },
+      "borders": {
+        "default": "slate-800",
+        "hover": "amber-500/50",
+        "active": "amber-500"
+      }
+    },
+
+    "typography": {
+      "fontFamilies": {
+        "sans": "Geist Sans (or Inter, system-ui)",
+        "mono": "Geist Mono (or JetBrains Mono, Fira Code)",
+        "usage": "Sans for body, mono for technical/code elements"
+      },
+      "scale": {
+        "xs": "text-xs (0.75rem)",
+        "sm": "text-sm (0.875rem)",
+        "base": "text-base (1rem)",
+        "lg": "text-lg (1.125rem)",
+        "xl": "text-xl (1.25rem)",
+        "2xl": "text-2xl (1.5rem)",
+        "4xl": "text-4xl (2.25rem)",
+        "5xl": "text-5xl (3rem)",
+        "7xl": "text-7xl (4.5rem)",
+        "8xl": "text-8xl (6rem)"
+      },
+      "weights": {
+        "normal": "font-normal (400)",
+        "bold": "font-bold (700)",
+        "extrabold": "font-extrabold (800)"
+      },
+      "headingStyle": {
+        "size": "text-5xl md:text-7xl or text-7xl md:text-8xl",
+        "weight": "font-extrabold",
+        "tracking": "tracking-tighter or tracking-tight",
+        "leading": "leading-tight or leading-[1.1]",
+        "color": "text-white",
+        "accentPattern": "Gradient text on key phrases using bg-clip-text + bg-gradient-to-r"
+      },
+      "bodyStyle": {
+        "size": "text-base md:text-lg",
+        "weight": "font-normal",
+        "leading": "leading-relaxed",
+        "color": "text-slate-300 or text-slate-400"
+      }
+    },
+
+    "spacing": {
+      "sections": "py-16 md:py-24 or py-24 md:py-32",
+      "containers": "max-w-7xl mx-auto px-6 md:px-8",
+      "cards": "p-6 md:p-8",
+      "gaps": "gap-6 md:gap-8 or gap-8 md:gap-12"
+    },
+
+    "components": {
+      "buttons": {
+        "primary": {
+          "classes": "px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-600 text-white font-bold rounded-sm hover:scale-105 transition-transform shadow-xl shadow-amber-500/20",
+          "usage": "High-stakes CTAs, main actions"
+        },
+        "secondary": {
+          "classes": "px-6 py-3 bg-slate-800 text-slate-200 font-bold rounded-sm border border-slate-700 hover:border-amber-500/50 transition-colors",
+          "usage": "Secondary actions, less urgent CTAs"
+        },
+        "ghost": {
+          "classes": "px-4 py-2 text-slate-300 hover:text-amber-500 transition-colors",
+          "usage": "Navigation, subtle actions"
+        }
+      },
+
+      "cards": {
+        "default": {
+          "classes": "bg-slate-900 rounded-2xl p-8 border border-slate-800 hover:border-amber-500/50 transition-all duration-300",
+          "usage": "Content containers, feature cards"
+        },
+        "elevated": {
+          "classes": "bg-gradient-to-b from-slate-800 to-slate-900 rounded-2xl p-8 border-2 border-amber-500/30 shadow-2xl",
+          "usage": "Featured/highlighted content"
+        },
+        "interactive": {
+          "classes": "bg-slate-900 rounded-xl p-6 border border-slate-800 hover:border-amber-500 hover:shadow-lg hover:shadow-amber-500/10 transition-all cursor-pointer group",
+          "usage": "Clickable cards, navigation tiles"
+        }
+      },
+
+      "badges": {
+        "status": {
+          "classes": "inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-slate-800 text-amber-500 font-bold tracking-wider text-xs uppercase",
+          "usage": "Status indicators, labels"
+        },
+        "urgency": {
+          "classes": "bg-amber-500 text-slate-950 text-xs font-bold px-3 py-1 rounded-full",
+          "usage": "Urgency markers, 'Most Popular', 'Limited'"
+        }
+      },
+
+      "navigation": {
+        "fixed": {
+          "classes": "fixed top-0 left-0 right-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-900",
+          "usage": "Sticky headers"
+        },
+        "link": {
+          "default": "text-slate-300 hover:text-amber-500 transition-colors",
+          "active": "text-amber-500 font-bold"
+        }
+      },
+
+      "inputs": {
+        "text": {
+          "classes": "w-full px-4 py-3 bg-slate-900 border border-slate-800 rounded-sm text-slate-200 placeholder:text-slate-500 focus:border-amber-500 focus:outline-none transition-colors",
+          "usage": "Form inputs"
+        },
+        "textarea": {
+          "classes": "w-full px-4 py-3 bg-slate-900 border border-slate-800 rounded-sm text-slate-200 placeholder:text-slate-500 focus:border-amber-500 focus:outline-none transition-colors resize-none",
+          "usage": "Multi-line inputs"
+        }
+      },
+
+      "dividers": {
+        "default": "border-t border-slate-800",
+        "gradient": "h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"
+      }
+    },
+
+    "patterns": {
+      "heroSection": {
+        "structure": "Full-width section with max-w-7xl container, centered or two-column layout",
+        "elements": [
+          "Small badge/label above headline",
+          "Massive headline (text-7xl or text-8xl) with gradient accent on key phrase",
+          "Subheadline in slate-400",
+          "Primary CTA button",
+          "Optional: Hero image/visual on right side"
+        ],
+        "spacing": "py-24 md:py-32"
+      },
+
+      "featureGrid": {
+        "layout": "grid md:grid-cols-2 lg:grid-cols-3 gap-8",
+        "cardStyle": "bg-slate-900 rounded-2xl p-8 border border-slate-800",
+        "iconStyle": "w-12 h-12 text-amber-500 mb-6",
+        "titleStyle": "text-2xl font-bold mb-4",
+        "descriptionStyle": "text-slate-400 leading-relaxed"
+      },
+
+      "comparisonLayout": {
+        "structure": "grid md:grid-cols-2 gap-6 relative",
+        "vsBadge": "absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-slate-800 text-slate-200 font-bold rounded-full w-12 h-12 flex items-center justify-center border-4 border-slate-950 hidden md:flex",
+        "badSide": "bg-slate-900 border border-red-500/30 with red accents",
+        "goodSide": "bg-slate-900 border border-green-500/30 with green accents"
+      },
+
+      "testimonialCard": {
+        "classes": "bg-slate-900 rounded-xl p-8 border border-slate-800",
+        "quoteStyle": "text-lg text-slate-300 italic mb-6",
+        "authorStyle": "font-bold text-white",
+        "roleStyle": "text-sm text-slate-500"
+      },
+
+      "statsDisplay": {
+        "numberStyle": "text-5xl md:text-6xl font-extrabold text-amber-500",
+        "labelStyle": "text-sm uppercase tracking-widest text-slate-400 mt-2"
+      }
+    },
+
+    "animations": {
+      "hover": {
+        "scale": "hover:scale-105 transition-transform",
+        "glow": "hover:shadow-lg hover:shadow-amber-500/20 transition-shadow",
+        "border": "hover:border-amber-500/50 transition-colors",
+        "lift": "hover:-translate-y-1 transition-transform"
+      },
+      "entrance": {
+        "fadeIn": "Use framer-motion with opacity: [0, 1]",
+        "slideUp": "Use framer-motion with y: [20, 0], opacity: [0, 1]",
+        "stagger": "Use framer-motion staggerChildren for lists"
+      },
+      "interactive": {
+        "pulse": "animate-pulse for urgency indicators",
+        "spin": "animate-spin for loading states"
+      }
+    },
+
+    "layoutPatterns": {
+      "fullPage": {
+        "wrapper": "min-h-screen bg-slate-950 text-slate-200 font-sans selection:bg-amber-500/30",
+        "sections": "Alternating py-16/py-24/py-32 with max-w-7xl containers"
+      },
+      "sidebar": {
+        "layout": "flex h-screen overflow-hidden",
+        "sidebar": "w-64 bg-slate-900 border-r border-slate-800 flex-shrink-0",
+        "main": "flex-1 overflow-y-auto"
+      },
+      "twoColumn": {
+        "layout": "grid md:grid-cols-2 gap-12 items-center",
+        "usage": "Hero sections, feature showcases"
+      }
+    },
+
+    "visualEffects": {
+      "gradients": {
+        "text": "text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-600",
+        "background": "bg-gradient-to-r from-amber-500 to-orange-600",
+        "subtle": "bg-gradient-to-b from-slate-800 to-slate-900",
+        "overlay": "bg-gradient-to-r from-slate-950 via-transparent to-transparent"
+      },
+      "shadows": {
+        "glow": "shadow-xl shadow-amber-500/20",
+        "card": "shadow-2xl",
+        "none": "shadow-none"
+      },
+      "blur": {
+        "backdrop": "backdrop-blur-md",
+        "background": "bg-slate-950/90 backdrop-blur-md"
+      },
+      "decorative": {
+        "orb": "Absolute positioned div with blur-[100px] bg-amber-500/20 rounded-full",
+        "scanline": "bg-gradient-to-b from-transparent via-amber-500/5 to-transparent with animation",
+        "grid": "Use external texture URLs with opacity-30 for technical feel"
+      }
+    }
+  },
+
+  "implementationGuide": {
+    "setup": [
+      "1. Initialize Next.js 16+ with TypeScript and App Router",
+      "2. Install Tailwind CSS 4",
+      "3. npm install lucide-react framer-motion clsx tailwind-merge",
+      "4. Configure Geist fonts (or similar technical sans/mono fonts)",
+      "5. Set up Tailwind config with slate and amber color scales"
+    ],
+    "fileStructure": [
+      "app/layout.tsx - Root layout with fonts and metadata",
+      "app/page.tsx - Homepage",
+      "app/components/ - Reusable components (Navigation, Cards, etc.)",
+      "app/[route]/page.tsx - Individual pages with 'use client' if using hooks"
+    ],
+    "keyReminders": [
+      "Use 'use client' directive for components with useState, useEffect, or event handlers",
+      "Prefer dark backgrounds (slate-950, slate-900) with light text (slate-200, slate-300)",
+      "Use amber-500/orange-600 for all CTAs and interactive elements",
+      "Keep borders subtle (slate-800) until hover (amber-500/50)",
+      "Use extrabold fonts for headlines, normal for body",
+      "Add selection:bg-amber-500/30 to body for branded text selection",
+      "Use rounded-sm for buttons (sharp), rounded-xl/2xl for cards (softer)",
+      "Implement hover states on all interactive elements",
+      "Use max-w-7xl containers for content width control",
+      "Add responsive breakpoints (md:, lg:) for all major layout shifts"
+    ]
+  }
+}
+
