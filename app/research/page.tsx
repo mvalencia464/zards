@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Brain, Target, Zap, BookOpen, ArrowRight } from 'lucide-react';
+import { Zap, CheckCircle2, ArrowRight, TrendingUp } from 'lucide-react';
 import Navigation from '../components/Navigation';
 
 export default function ResearchPage() {
@@ -10,275 +10,359 @@ export default function ResearchPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6 relative overflow-hidden">
+      <section className="pt-32 pb-12 px-6 relative overflow-hidden">
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-slate-800 text-amber-500 font-bold tracking-wider text-xs uppercase mb-8">
-            <BookOpen className="w-4 h-4" />
-            SWARM EFFECT<sup>4</sup>
+            <span className="animate-pulse">●</span> Research & Validation
           </div>
           
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter leading-tight mb-6 text-white">
-            The Crisis of <br />
+            Proven Results for <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-600">
-              Executive Communication
+              Securing Buy-In
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto leading-relaxed mb-12">
-            Don't just inform. Propagate.
-          </p>
-
-          <p className="text-lg text-slate-400 max-w-3xl mx-auto leading-relaxed">
-            The Swarm Effect<sup>4</sup> is not a public speaking course. It is an Idea Propagation System engineered for executives who need their strategic vision to survive contact with the audience.
+            The Swarm Effect® doesn't just inform—it transforms how leaders earn commitment, secure budgets, and drive action across organizations.
           </p>
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-12 px-6 bg-slate-900/50">
-        <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-8 text-center">
-          <div>
-            <div className="text-4xl md:text-5xl font-extrabold text-amber-500 mb-2">42M+</div>
-            <div className="text-slate-400">Views Generated</div>
-          </div>
-          <div>
-            <div className="text-4xl md:text-5xl font-extrabold text-amber-500 mb-2">15+</div>
-            <div className="text-slate-400">Years Research</div>
-          </div>
-          <div>
-            <div className="text-4xl md:text-5xl font-extrabold text-amber-500 mb-2">Stoic-Backed</div>
-            <div className="text-slate-400">Psychological Certainty Protocol</div>
+      {/* Social Proof Banner */}
+      <section className="py-8 border-y border-slate-900 bg-slate-900/50">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <p className="text-sm uppercase tracking-widest text-slate-500 mb-6 font-medium">Trusted by leaders at</p>
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60">
+            <div className="text-2xl md:text-3xl font-bold tracking-tighter text-slate-300">ASTRAZENECA</div>
+            <div className="text-2xl md:text-3xl font-bold tracking-tighter text-slate-300">RED BULL</div>
+            <div className="text-2xl md:text-3xl font-bold tracking-tighter text-slate-300">MICROSOFT</div>
+            <div className="text-2xl md:text-3xl font-bold tracking-tighter text-slate-300">NASA</div>
           </div>
         </div>
       </section>
 
-      {/* Crisis Section */}
-      <section className="py-20 px-6">
-        <div className="max-w-4xl mx-auto">
-          <div className="flex items-center gap-3 mb-8">
-            <Target className="w-8 h-8 text-amber-500" />
-            <h2 className="text-3xl md:text-4xl font-bold text-white">I. The Crisis of Executive Communication</h2>
+      {/* Featured Stat with Case Study */}
+      <section className="py-24 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Stat */}
+            <div className="text-center md:text-left">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-500 font-bold text-xs uppercase tracking-wider mb-6">
+                <TrendingUp className="w-4 h-4" />
+                Impact Metrics
+              </div>
+              <div className="text-7xl md:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-600 mb-4">
+                44M+
+              </div>
+              <div className="text-2xl font-bold text-white mb-6">
+                Views Generated
+              </div>
+              <p className="text-lg text-slate-400 leading-relaxed">
+                Collective reach achieved by speakers coached using The Swarm Effect® methodology
+              </p>
+            </div>
+
+            {/* Case Study */}
+            <div className="bg-slate-900 rounded-2xl p-8 md:p-10 border border-slate-800 shadow-2xl">
+              <div className="flex items-center gap-2 mb-6">
+                <div className="w-2 h-2 bg-amber-500 rounded-full"></div>
+                <span className="text-xs uppercase tracking-widest font-bold text-amber-500">Featured Case Study</span>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                Daryl Davis: The Power of Strategic Narrative
+              </h3>
+              <p className="text-slate-300 leading-relaxed mb-6">
+                Coached using The Swarm Effect® principles, Daryl Davis's TEDx talk became one of the <strong className="text-white">top 0.001% of all TEDx talks globally</strong>, generating millions of views and sparking international dialogue on transformational communication.
+              </p>
+              
+              {/* Video Thumbnail Link */}
+              <a 
+                href="https://www.ted.com/talks/daryl_davis_why_i_as_a_black_man_attend_kkk_rallies" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group flex items-center gap-4"
+              >
+                <div className="relative overflow-hidden rounded-lg border border-slate-800 group-hover:border-amber-500/50 transition-all flex-shrink-0 w-32 h-18">
+                  <img 
+                    src="https://i3.ytimg.com/vi/ORp3q1Oaezw/maxresdefault.jpg"
+                    alt="Daryl Davis TEDx Talk"
+                    className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
+                  />
+                </div>
+                <div className="flex items-center gap-2 text-amber-500 font-bold">
+                  Watch the Talk
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </a>
+            </div>
           </div>
-          <p className="text-lg text-slate-300 leading-relaxed mb-4">
-            Modern corporate communication is failing. Traditional "corporate speak" results in ideas that "die before the audience applause ends."
-          </p>
-          <p className="text-lg text-slate-300 leading-relaxed">
-            The market demanded a high-efficiency solution: a model that could convert limited executive time into maximum return on communication capital. The Swarm Effect<sup>4</sup> emerged from the TED revolution to meet this need distilling 15 years of world-class communication analysis into a rapid-mastery framework.
-          </p>
         </div>
       </section>
 
-      {/* Comparison Table */}
+      {/* Buy-In Content from Workshop - Two Column Layout */}
       <section className="py-20 px-6 bg-slate-900">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
-            System Analysis: Executive Communication
-          </h2>
-          
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse">
-              <thead>
-                <tr className="border-b-2 border-amber-500">
-                  <th className="text-left p-4 text-slate-400 font-bold uppercase text-sm tracking-wider">Dimension</th>
-                  <th className="text-left p-4 text-red-400 font-bold uppercase text-sm tracking-wider">Conventional Corporate</th>
-                  <th className="text-left p-4 text-amber-500 font-bold uppercase text-sm tracking-wider">Swarm Effect<sup>4</sup></th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-800">
-                <tr className="hover:bg-slate-800/50 transition-colors">
-                  <td className="p-4 font-bold text-white">Goal</td>
-                  <td className="p-4 text-slate-400">Passive Information Transfer</td>
-                  <td className="p-4 text-slate-300">Actionable Impact & Propagation</td>
-                </tr>
-                <tr className="hover:bg-slate-800/50 transition-colors">
-                  <td className="p-4 font-bold text-white">Format</td>
-                  <td className="p-4 text-slate-400">Lecture / Slide-Driven</td>
-                  <td className="p-4 text-slate-300">Conversational / Story-Driven</td>
-                </tr>
-                <tr className="hover:bg-slate-800/50 transition-colors">
-                  <td className="p-4 font-bold text-white">Lifespan</td>
-                  <td className="p-4 text-slate-400">Dies after applause</td>
-                  <td className="p-4 text-slate-300">Lives & thrives to transform</td>
-                </tr>
-                <tr className="hover:bg-slate-800/50 transition-colors">
-                  <td className="p-4 font-bold text-white">Engagement</td>
-                  <td className="p-4 text-slate-400">Passive Absorption</td>
-                  <td className="p-4 text-slate-300">Audience 'Swarming'</td>
-                </tr>
-              </tbody>
-            </table>
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* Left Column */}
+            <div>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+                Build the Buy-In Narrative Your Organization Needs
+              </h2>
+              <p className="text-lg text-slate-400 leading-relaxed mb-4">
+                Every company talks about innovation and change.
+              </p>
+              <p className="text-lg text-slate-400 leading-relaxed mb-4">
+                Very few get people to believe in it.
+              </p>
+              <p className="text-lg text-slate-400 leading-relaxed mb-8">
+                Most leaders communicate through information, not narrative. Facts inform. Stories move people. The Swarm Effect® gives executives a practical way to turn complex, technical content into messages that earn trust and spark action.
+              </p>
+
+              {/* Context */}
+              <div className="bg-slate-950 rounded-2xl p-8 border border-slate-800">
+                <h3 className="text-2xl font-bold text-white mb-4">Why it matters now</h3>
+                <p className="text-slate-300 leading-relaxed mb-4">
+                  Not only has traditional communication shifted, AI is accelerating change across teams, tools, and expectations. None of it works without buy-in.
+                </p>
+                <p className="text-slate-300 leading-relaxed">
+                  The Swarm Effect® teaches leaders to craft buy-in narratives that help people understand, care, and commit.
+                </p>
+              </div>
+            </div>
+
+            {/* Right Column - Comparison Table */}
+            <div className="flex items-start">
+              <div className="bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden shadow-2xl w-full">
+                <div className="grid grid-cols-2 text-xs font-bold uppercase tracking-widest text-slate-500 border-b border-slate-800 bg-slate-900/50">
+                  <div className="p-4 flex items-center gap-2">
+                    <span className="text-red-500">✕</span> Conventional Corporate
+                  </div>
+                  <div className="p-4 flex items-center gap-2 text-amber-500 bg-amber-500/5">
+                    <CheckCircle2 className="w-4 h-4" /> Swarm Effect®
+                  </div>
+                </div>
+                <div className="divide-y divide-slate-900">
+                  <div className="grid grid-cols-2 text-sm">
+                    <div className="p-6 text-slate-400 flex flex-col">
+                      <span className="text-xs uppercase tracking-widest font-bold text-slate-600 mb-2">Goal</span>
+                      Passive Information Transfer
+                    </div>
+                    <div className="p-6 text-white font-medium bg-amber-500/5 flex flex-col">
+                      <span className="text-xs uppercase tracking-widest font-bold text-amber-500/50 mb-2">Goal</span>
+                      Actionable Impact & Propagation
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-2 text-sm">
+                    <div className="p-6 text-slate-400 flex flex-col">
+                      <span className="text-xs uppercase tracking-widest font-bold text-slate-600 mb-2">Format</span>
+                      Lecture / Slide-Driven
+                    </div>
+                    <div className="p-6 text-white font-medium bg-amber-500/5 flex flex-col">
+                      <span className="text-xs uppercase tracking-widest font-bold text-amber-500/50 mb-2">Format</span>
+                      Conversational / Story-Driven
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-2 text-sm">
+                    <div className="p-6 text-slate-400 flex flex-col">
+                      <span className="text-xs uppercase tracking-widest font-bold text-slate-600 mb-2">Lifespan</span>
+                      Dies after applause
+                    </div>
+                    <div className="p-6 text-white font-medium bg-amber-500/5 flex flex-col">
+                      <span className="text-xs uppercase tracking-widest font-bold text-amber-500/50 mb-2">Lifespan</span>
+                      Lives & thrives to transform
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-2 text-sm">
+                    <div className="p-6 text-slate-400 flex flex-col">
+                      <span className="text-xs uppercase tracking-widest font-bold text-slate-600 mb-2">Engagement</span>
+                      Passive Absorption
+                    </div>
+                    <div className="p-6 text-white font-medium bg-amber-500/5 flex flex-col">
+                      <span className="text-xs uppercase tracking-widest font-bold text-amber-500/50 mb-2">Engagement</span>
+                      Audience 'Swarming'
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Mechanism Section */}
+      {/* Image + Story Table Section */}
       <section className="py-20 px-6">
-        <div className="max-w-4xl mx-auto">
-          <div className="flex items-center gap-3 mb-8">
-            <Brain className="w-8 h-8 text-amber-500" />
-            <h2 className="text-3xl md:text-4xl font-bold text-white">Mechanism of Transformation</h2>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 items-start mb-12">
+            {/* Left Column - Image */}
+            <div className="space-y-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-white">
+                How The Swarm Effect gets buy-in
+              </h2>
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src="https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914cc32b4acab3f2457cbf3.webp"
+                  alt="Arthur Zards speaking at a TedX event"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <p className="text-slate-400 text-sm italic">
+                Arthur Zards speaking at a TedX event
+              </p>
+            </div>
+
+            {/* Right Column - Story Table */}
+            <div>
+              <h3 className="text-2xl font-bold text-amber-500 mb-6 uppercase tracking-wider">Story</h3>
+              <div className="bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden shadow-2xl">
+                <div className="grid grid-cols-2 text-xs font-bold uppercase tracking-widest text-slate-500 border-b border-slate-800 bg-slate-900/50">
+                  <div className="p-4 flex items-center gap-2">
+                    <span className="text-red-500">✕</span> Transactional Speaking
+                  </div>
+                  <div className="p-4 flex items-center gap-2 text-amber-500 bg-amber-500/5">
+                    <CheckCircle2 className="w-4 h-4" /> Transformational Speaking
+                  </div>
+                </div>
+                <div className="divide-y divide-slate-900">
+                  <div className="grid grid-cols-2 text-sm">
+                    <div className="p-6 text-slate-400">Exchange information</div>
+                    <div className="p-6 text-white font-medium bg-amber-500/5">Inspire and Transform</div>
+                  </div>
+                  <div className="grid grid-cols-2 text-sm">
+                    <div className="p-6 text-slate-400">Data Driven</div>
+                    <div className="p-6 text-white font-medium bg-amber-500/5">Story Driven</div>
+                  </div>
+                  <div className="grid grid-cols-2 text-sm">
+                    <div className="p-6 text-slate-400">Task Completion / Efficiency</div>
+                    <div className="p-6 text-white font-medium bg-amber-500/5">Transformation / Personal Growth</div>
+                  </div>
+                  <div className="grid grid-cols-2 text-sm">
+                    <div className="p-6 text-slate-400">Process-Oriented</div>
+                    <div className="p-6 text-white font-medium bg-amber-500/5">Purpose-Driven</div>
+                  </div>
+                  <div className="grid grid-cols-2 text-sm">
+                    <div className="p-6 text-slate-400">Static, Predictable Energy</div>
+                    <div className="p-6 text-white font-medium bg-amber-500/5">Dynamic, Adaptive Energy</div>
+                  </div>
+                  <div className="grid grid-cols-2 text-sm">
+                    <div className="p-6 text-slate-400">Logical-Only Approach</div>
+                    <div className="p-6 text-white font-medium bg-amber-500/5">Logic + Emotional Connection</div>
+                  </div>
+                  <div className="grid grid-cols-2 text-sm">
+                    <div className="p-6 text-slate-400">Tells the Audience a Story</div>
+                    <div className="p-6 text-white font-medium bg-amber-500/5">Guides the Audience to Live the Story</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <h3 className="text-2xl font-bold text-amber-500 mb-8">The Idea to Actualization Model</h3>
-          <p className="text-lg text-slate-300 leading-relaxed mb-12">
-            A proprietary framework ensuring executive ideas move rigorously from raw concept to sustained organizational impact.
-          </p>
 
-          <div className="space-y-8">
-            {/* Phase I */}
-            <div className="bg-slate-900 rounded-2xl p-8 border border-slate-800">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-amber-500/10 rounded-full flex items-center justify-center border border-amber-500/20">
-                  <span className="text-amber-500 font-bold text-xl">I</span>
-                </div>
-                <div>
-                  <h4 className="text-xl font-bold text-white mb-2">Discovery Protocol</h4>
-                  <p className="text-amber-500 font-bold mb-3">The 'Deeper Truth'</p>
-                  <p className="text-slate-300 leading-relaxed">
-                    We interrogate your idea until we find the singular core element that matters. Anchored in Stoic philosophy to build unshakeable internal certainty.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Phase II */}
-            <div className="bg-slate-900 rounded-2xl p-8 border border-slate-800">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-amber-500/10 rounded-full flex items-center justify-center border border-amber-500/20">
-                  <span className="text-amber-500 font-bold text-xl">II</span>
-                </div>
-                <div>
-                  <h4 className="text-xl font-bold text-white mb-2">Narrative Architecture</h4>
-                  <p className="text-amber-500 font-bold mb-3">Structure & Arc</p>
-                  <p className="text-slate-300 leading-relaxed">
-                    Leveraging the 'Storytelling Creation Toolbox' to structure the idea for maximum resonance without needing to become a 'professional storyteller'.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Phase III */}
-            <div className="bg-slate-900 rounded-2xl p-8 border border-slate-800">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-amber-500/10 rounded-full flex items-center justify-center border border-amber-500/20">
-                  <span className="text-amber-500 font-bold text-xl">III</span>
-                </div>
-                <div>
-                  <h4 className="text-xl font-bold text-white mb-2">Actualization Delivery</h4>
-                  <p className="text-amber-500 font-bold mb-3">Swarm Execution</p>
-                  <p className="text-slate-300 leading-relaxed">
-                    Converting the refined idea into a powerful presentation that triggers the 'Swarm'—immediate, widespread organizational adoption.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Core Strategies */}
-      <section className="py-20 px-6 bg-slate-900">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
-            III. Core Strategies: The "How-To-Swarm" Blueprint
-          </h2>
-
+          {/* Outcomes - Full Width Below */}
+          <h3 className="text-3xl font-bold text-white mb-8">You will learn how to:</h3>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-slate-950 p-6 rounded-xl border border-slate-800">
-              <h3 className="text-xl font-bold text-amber-500 mb-3">Conversational Mastery</h3>
-              <p className="text-slate-300 leading-relaxed">
-                Breaking definitively from rigid formal structures. A versatile style applicable not just to keynotes, but to high-stakes board meetings and sales pitches.
+              <h4 className="font-bold text-white mb-2 flex items-center gap-2">
+                <CheckCircle2 className="w-5 h-5 text-amber-500" />
+                Turn complex updates into messages people remember
+              </h4>
+              <p className="text-slate-400 ml-7">
+                Transform technical information into narratives that stick in your audience's mind long after the presentation ends.
+              </p>
+            </div>
+            
+            <div className="bg-slate-950 p-6 rounded-xl border border-slate-800">
+              <h4 className="font-bold text-white mb-2 flex items-center gap-2">
+                <CheckCircle2 className="w-5 h-5 text-amber-500" />
+                Communicate change in a way that feels human and believable
+              </h4>
+              <p className="text-slate-400 ml-7">
+                Bridge the gap between data-driven insights and human connection to make change initiatives resonate.
               </p>
             </div>
 
             <div className="bg-slate-950 p-6 rounded-xl border border-slate-800">
-              <h3 className="text-xl font-bold text-amber-500 mb-3">The Engagement Toolkit</h3>
-              <p className="text-slate-300 leading-relaxed">
-                Solving the 'visually flat' presentation problem. Learn to use powerful visual tools that exist outside the standard slide deck without needing graphic design skills.
+              <h4 className="font-bold text-white mb-2 flex items-center gap-2">
+                <CheckCircle2 className="w-5 h-5 text-amber-500" />
+                Build trust through clarity, contrast, and authenticity
+              </h4>
+              <p className="text-slate-400 ml-7">
+                Use proven narrative structures to establish credibility and earn stakeholder confidence.
               </p>
             </div>
 
             <div className="bg-slate-950 p-6 rounded-xl border border-slate-800">
-              <h3 className="text-xl font-bold text-amber-500 mb-3">AI as Strategic Collaborator</h3>
-              <p className="text-slate-300 leading-relaxed">
-                Using AI not as a replacement for thought, but as a 'new communication muse' to dramatically increase content creation velocity.
-              </p>
-            </div>
-
-            <div className="bg-slate-950 p-6 rounded-xl border border-slate-800">
-              <h3 className="text-xl font-bold text-amber-500 mb-3">Flow State Activation</h3>
-              <p className="text-slate-300 leading-relaxed">
-                Cultivating peak performance through focused preparation. The psychological mechanism that guarantees authentic connection and delivery mastery.
+              <h4 className="font-bold text-white mb-2 flex items-center gap-2">
+                <CheckCircle2 className="w-5 h-5 text-amber-500" />
+                Guide audiences from data to decision
+              </h4>
+              <p className="text-slate-400 ml-7">
+                Create clear pathways that move people from understanding information to taking action.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Philosophical Anchor */}
+      {/* The Result */}
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white">THE PHILOSOPHICAL ANCHOR</h2>
-          <h3 className="text-2xl font-bold text-amber-500 mb-6">Stoicism: The Bedrock of Executive Certainty</h3>
-          <p className="text-lg text-slate-300 leading-relaxed mb-4">
-            Most programs teach surface-level performance skills. We teach mental mastery.
-          </p>
-          <p className="text-lg text-slate-300 leading-relaxed mb-4">
-            By integrating Stoic principles<sup>1</sup>specifically distinguishing "what is within and without our control"<sup>1</sup>we build unshakeable psychological security. This internal certainty is what allows an executive to be perceived as competent, authentic, and tough under pressure.
-          </p>
-          <div className="bg-slate-900 rounded-xl p-8 border-l-4 border-amber-500 mt-8">
-            <p className="text-xl font-bold text-white mb-2">Certainty Protocol</p>
-            <p className="text-slate-300 italic">
-              "Psychological security is not a passive state, but the mind's expression of a degree of certainty in its situation."
+          <div className="bg-gradient-to-br from-amber-500/10 to-orange-600/10 rounded-2xl p-8 md:p-12 border border-amber-500/20 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">The result</h2>
+            <p className="text-2xl text-slate-300 leading-relaxed mb-4">
+              When leaders use story, people do not just understand.
+            </p>
+            <p className="text-3xl md:text-4xl font-bold text-white mb-4">
+              They believe.
+            </p>
+            <p className="text-xl text-slate-400">
+              Belief is what turns change into progress.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Validation */}
+      {/* Validation Stats */}
       <section className="py-20 px-6 bg-slate-900">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
-            IV. Validation: The Swarm in Action
+            The Swarm Effect® in Numbers
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
-              <div className="text-3xl font-bold text-amber-500 mb-2">Measurable Reach</div>
-              <div className="text-4xl font-extrabold text-white mb-2">42 Million+</div>
-              <p className="text-slate-400">Collective online views generated by Swarm Effect<sup>4</sup> coached speakers.</p>
+              <div className="text-5xl font-extrabold text-amber-500 mb-2">15+</div>
+              <div className="text-slate-400">Years of Research</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-amber-500 mb-2">Elite Clientele</div>
-              <div className="text-xl font-bold text-white mb-2">Billionaires, Olympians, Astronauts, & C-Suite Leaders</div>
-              <p className="text-slate-400">Universally adaptable methodology across the highest echelons.</p>
+              <div className="text-5xl font-extrabold text-amber-500 mb-2">0.001%</div>
+              <div className="text-slate-400">Top Tier TEDx Talks</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-amber-500 mb-2">Immediate ROI</div>
-              <div className="text-xl font-bold text-white mb-2">"Able to apply immediately"</div>
-              <p className="text-slate-400">Client feedback consistently highlights rapid applicability for busy schedules.</p>
+              <div className="text-5xl font-extrabold text-amber-500 mb-2">C-Suite</div>
+              <div className="text-slate-400">Trusted by Executives Globally</div>
             </div>
           </div>
 
           <div className="bg-slate-950 p-8 rounded-xl border border-slate-800">
-            <p className="text-xl text-slate-300 italic leading-relaxed mb-6">
-              "[Arthur] challenged me to go outside of my comfort zone and develop something much more thought provoking and controversial than I would have done on my own."
+            <p className="text-xl text-slate-300 italic leading-relaxed mb-4">
+              "The methodology challenged me to go outside of my comfort zone and develop something much more thought-provoking and impactful than I would have done on my own."
             </p>
-            <div className="text-amber-500 font-bold">Executive Client</div>
+            <div className="text-amber-500 font-bold">— Executive Client</div>
           </div>
         </div>
       </section>
 
-      {/* CTA */}
+      {/* CTA Section */}
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-            Ready to engineer your Idea Propagation System?
+            Ready to secure buy-in for your next initiative?
           </h2>
-          <p className="text-lg text-slate-400 mb-8">
-            The Swarm Effect<sup>4</sup> is available as an intensive Executive Sprint for leaders who need rapid mastery.
+          <p className="text-lg text-slate-400 mb-8 max-w-2xl mx-auto">
+            Schedule a conversation to explore how the Swarm Effect® can transform communication across your organization.
           </p>
           <button className="px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-600 text-white font-bold rounded-sm hover:scale-105 transition-transform shadow-xl shadow-amber-500/20 inline-flex items-center gap-2">
-            Book Executive Sprint
+            Schedule Discovery Call
             <ArrowRight className="w-5 h-5" />
           </button>
         </div>
@@ -295,4 +379,3 @@ export default function ResearchPage() {
     </div>
   );
 }
-

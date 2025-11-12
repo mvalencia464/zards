@@ -44,7 +44,7 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           <div className="font-bold text-2xl tracking-tighter flex items-center gap-2">
             <BrainCircuit className="text-amber-500 w-8 h-8" />
-            <span>ALEX VANCE</span>
+            <span>ARTHUR ZARDS</span>
           </div>
           
           {/* Desktop Nav */}
@@ -253,7 +253,7 @@ export default function LandingPage() {
       <section id="services" className="py-24 md:py-32">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-20">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">Work with Alex</h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">Work with Arthur</h2>
             <p className="text-xl text-slate-400 max-w-2xl mx-auto">
               Bring the principles of 'The Swarm Effect' to your organization through high-impact engagements.
             </p>
@@ -330,7 +330,7 @@ export default function LandingPage() {
             <div className="grid md:grid-cols-2 gap-8">
                 <div className="bg-slate-950 p-8 rounded-xl border border-slate-800 relative">
                     <p className="text-lg text-slate-300 italic leading-relaxed mb-6">
-                        "Alex completely transformed how our Data Science team presents to the board. We went from glazing eyes to standing ovations. The 'Swarm Effect' metaphor just clicked for our engineers."
+                        "Arthur completely transformed how our Data Science team presents to the board. We went from glazing eyes to standing ovations. The 'Swarm Effect' metaphor just clicked for our engineers."
                     </p>
                     <div className="flex items-center gap-4">
                         <div className="w-12 h-12 bg-slate-800 rounded-full border-2 border-amber-500/20" />
@@ -342,7 +342,7 @@ export default function LandingPage() {
                 </div>
                 <div className="bg-slate-950 p-8 rounded-xl border border-slate-800 relative">
                     <p className="text-lg text-slate-300 italic leading-relaxed mb-6">
-                        "The most valuable workshop we've ran in three years. Alex doesn't just teach storytelling; he teaches how to architect information for maximum cognitive impact."
+                        "The most valuable workshop we've ran in three years. Arthur doesn't just teach storytelling; he teaches how to architect information for maximum cognitive impact."
                     </p>
                     <div className="flex items-center gap-4">
                         <div className="w-12 h-12 bg-slate-800 rounded-full border-2 border-amber-500/20" />
@@ -421,7 +421,7 @@ export default function LandingPage() {
           <div className="col-span-2">
             <div className="font-bold text-xl tracking-tighter flex items-center justify-center md:justify-start gap-2 mb-4">
               <BrainCircuit className="text-amber-500 w-6 h-6" />
-              <span>ALEX VANCE</span>
+              <span>ARTHUR ZARDS</span>
             </div>
             <p className="text-slate-500 max-w-sm mx-auto md:mx-0">
               Empowering technical leaders to find their voice and drive collective action through the power of narrative intelligence.
@@ -460,7 +460,7 @@ export default function LandingPage() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-slate-900 text-center text-slate-600 text-sm">
-          © {new Date().getFullYear()} Alex Vance International. All rights reserved.
+          © {new Date().getFullYear()} Arthur Zards International. All rights reserved.
         </div>
       </footer>
     </div>

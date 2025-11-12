@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Calendar, Users, Target, CheckCircle2, ArrowRight, Zap, BookOpen } from 'lucide-react';
+import { Calendar, Users, Target, CheckCircle2, ArrowRight, Zap, BookOpen, TrendingUp } from 'lucide-react';
 import Navigation from '../components/Navigation';
 
 export default function Workshop2Page() {
@@ -38,12 +38,81 @@ export default function Workshop2Page() {
         </div>
       </section>
 
-      {/* Main Content */}
-      <section className="py-20 px-6">
-        <div className="max-w-4xl mx-auto space-y-20">
-          
-          {/* Build the Buy-In Narrative */}
-          <div>
+      {/* Social Proof Banner */}
+      <section className="py-8 border-y border-slate-900 bg-slate-900/50">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <p className="text-sm uppercase tracking-widest text-slate-500 mb-6 font-medium">Trusted by leaders at</p>
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60">
+            <div className="text-2xl md:text-3xl font-bold tracking-tighter text-slate-300">ASTRAZENECA</div>
+            <div className="text-2xl md:text-3xl font-bold tracking-tighter text-slate-300">RED BULL</div>
+            <div className="text-2xl md:text-3xl font-bold tracking-tighter text-slate-300">MICROSOFT</div>
+            <div className="text-2xl md:text-3xl font-bold tracking-tighter text-slate-300">NASA</div>
+          </div>
+        </div>
+      </section>
+
+      {/* Impact Metrics - 44M+ Section */}
+      <section className="py-24 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Stat */}
+            <div className="text-center md:text-left">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-500 font-bold text-xs uppercase tracking-wider mb-6">
+                <TrendingUp className="w-4 h-4" />
+                Impact Metrics
+              </div>
+              <div className="text-7xl md:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-600 mb-4">
+                44M+
+              </div>
+              <div className="text-2xl font-bold text-white mb-6">
+                Views Generated
+              </div>
+              <p className="text-lg text-slate-400 leading-relaxed">
+                Collective reach achieved by speakers coached using The Swarm Effect® methodology
+              </p>
+            </div>
+
+            {/* Case Study */}
+            <div className="bg-slate-900 rounded-2xl p-8 md:p-10 border border-slate-800 shadow-2xl">
+              <div className="flex items-center gap-2 mb-6">
+                <div className="w-2 h-2 bg-amber-500 rounded-full"></div>
+                <span className="text-xs uppercase tracking-widest font-bold text-amber-500">Featured Case Study</span>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                Daryl Davis: The Power of Strategic Narrative
+              </h3>
+              <p className="text-slate-300 leading-relaxed mb-6">
+                Coached using The Swarm Effect® principles, Daryl Davis's TEDx talk became one of the <strong className="text-white">top 0.001% of all TEDx talks globally</strong>, generating millions of views and sparking international dialogue on transformational communication.
+              </p>
+              
+              {/* Video Thumbnail Link */}
+              <a 
+                href="https://www.ted.com/talks/daryl_davis_why_i_as_a_black_man_attend_kkk_rallies" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group flex items-center gap-4"
+              >
+                <div className="relative overflow-hidden rounded-lg border border-slate-800 group-hover:border-amber-500/50 transition-all flex-shrink-0 w-32 h-18">
+                  <img 
+                    src="https://i3.ytimg.com/vi/ORp3q1Oaezw/maxresdefault.jpg"
+                    alt="Daryl Davis TEDx Talk"
+                    className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
+                  />
+                </div>
+                <div className="flex items-center gap-2 text-amber-500 font-bold">
+                  Watch the Talk
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Build the Buy-In Narrative - Full Width */}
+      <section className="py-20 px-6 bg-slate-900">
+        <div className="max-w-6xl mx-auto">
+          <div className="max-w-4xl mx-auto mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Build the Buy-In Narrative Your Organization Needs
             </h2>
@@ -58,44 +127,77 @@ export default function Workshop2Page() {
             </p>
           </div>
 
-          {/* The Context */}
-          <div className="bg-slate-900 rounded-2xl p-8 md:p-12 border border-slate-800">
-            <div className="flex items-center gap-3 mb-6">
-              <Target className="w-8 h-8 text-amber-500" />
-              <h3 className="text-2xl font-bold text-white">The Context</h3>
+          {/* Context - With Image */}
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="bg-slate-950 rounded-2xl p-8 md:p-10 border border-slate-800">
+              <h3 className="text-2xl font-bold text-white mb-4">Why it matters now</h3>
+              <p className="text-slate-300 leading-relaxed mb-4">
+                Not only has traditional communication shifted, AI is accelerating change across teams, tools, and expectations. None of it works without buy-in.
+              </p>
+              <p className="text-slate-300 leading-relaxed">
+                The Swarm Effect® teaches leaders to craft buy-in narratives that help people understand, care, and commit.
+              </p>
             </div>
-            <h4 className="text-xl font-bold text-amber-500 mb-4">Why it matters now</h4>
-            <p className="text-slate-300 leading-relaxed mb-4">
-              Not only has traditional communication shifted, AI is accelerating change across teams, tools, and expectations. None of it works without buy-in.
-            </p>
-            <p className="text-slate-300 leading-relaxed">
-              The Swarm Effect® teaches leaders to craft buy-in narratives that help people understand, care, and commit.
-            </p>
-            <div className="mt-6 inline-block px-4 py-2 bg-amber-500/10 border border-amber-500/20 rounded-sm text-amber-500 font-bold text-sm">
-              Accelerating Change
+            
+            <div className="relative rounded-xl overflow-hidden border border-slate-800 shadow-xl">
+              <img 
+                src="https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f0003f86941de710770f.png"
+                alt="Why it matters now"
+                className="w-full h-auto object-cover"
+              />
             </div>
           </div>
-
         </div>
       </section>
 
-      {/* Conventional Corporate vs Swarm Effect Comparison */}
+      {/* How The Swarm Effect Gets Buy-In */}
       <section className="py-20 px-6">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden shadow-2xl">
-            <div className="grid grid-cols-2 text-xs font-bold uppercase tracking-widest text-slate-500 border-b border-slate-800 bg-slate-900/50">
-              <div className="p-4 flex items-center gap-2">
-                <span className="text-red-500">✕</span> Conventional Corporate
-              </div>
-              <div className="p-4 flex items-center gap-2 text-amber-500 bg-amber-500/5">
-                <CheckCircle2 className="w-4 h-4" /> Swarm Effect4
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
+            How The Swarm Effect Gets Buy-In
+          </h2>
+          
+          <div className="grid md:grid-cols-2 gap-8 items-stretch">
+            {/* Left Column - Image as Cover with Overlay */}
+            <div className="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl min-h-[600px] flex items-end">
+              <img 
+                src="https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914cc32b4acab3f2457cbf3.webp"
+                alt="Arthur Zards speaking at a TedX event"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent"></div>
+              <div className="relative z-10 p-8 md:p-10">
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                  The Methodology in Action
+                </h3>
+                <p className="text-slate-300 leading-relaxed mb-3">
+                  Arthur demonstrates the core principles of transformational speaking—moving beyond data delivery to create genuine audience connection and commitment.
+                </p>
+                <p className="text-slate-200 font-medium mb-4">
+                  The same frameworks used in this TEDx talk are now available to executives who need their strategic messages to drive immediate organizational action.
+                </p>
+                <div className="inline-block px-3 py-1 bg-amber-500/20 border border-amber-500/30 rounded-sm text-amber-400 text-xs font-bold uppercase tracking-wider">
+                  Live Demonstration
+                </div>
               </div>
             </div>
-            <div className="divide-y divide-slate-900">
-              <ComparisonRow label="Goal" oldWay="Passive Information Transfer" newWay="Actionable Impact & Propagation" />
-              <ComparisonRow label="Format" oldWay="Lecture / Slide-Driven" newWay="Conversational / Story-Driven" />
-              <ComparisonRow label="Lifespan" oldWay="Dies after applause" newWay="Lives & thrives to transform" />
-              <ComparisonRow label="Engagement" oldWay="Passive Absorption" newWay="Audience 'Swarming'" />
+
+            {/* Right Column - Comparison Table */}
+            <div className="bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden shadow-2xl">
+              <div className="grid grid-cols-2 text-xs font-bold uppercase tracking-widest text-slate-500 border-b border-slate-800 bg-slate-900/50">
+                <div className="p-4 flex items-center gap-2">
+                  <span className="text-red-500">✕</span> Conventional Corporate
+                </div>
+                <div className="p-4 flex items-center gap-2 text-amber-500 bg-amber-500/5">
+                  <CheckCircle2 className="w-4 h-4" /> Swarm Effect4
+                </div>
+              </div>
+              <div className="divide-y divide-slate-900">
+                <ComparisonRow label="Goal" oldWay="Passive Information Transfer" newWay="Actionable Impact & Propagation" />
+                <ComparisonRow label="Format" oldWay="Lecture / Slide-Driven" newWay="Conversational / Story-Driven" />
+                <ComparisonRow label="Lifespan" oldWay="Dies after applause" newWay="Lives & thrives to transform" />
+                <ComparisonRow label="Engagement" oldWay="Passive Absorption" newWay="Audience 'Swarming'" />
+              </div>
             </div>
           </div>
         </div>
@@ -120,156 +222,90 @@ export default function Workshop2Page() {
           {/* STORY Category */}
           <div className="mb-12">
             <h3 className="text-2xl font-bold text-amber-500 mb-6 uppercase tracking-wider">Story</h3>
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse">
-                <thead>
-                  <tr className="border-b-2 border-amber-500">
-                    <th className="text-left p-4 text-red-400 font-bold uppercase text-sm tracking-wider w-1/2">Transactional Speaking</th>
-                    <th className="text-left p-4 text-amber-500 font-bold uppercase text-sm tracking-wider w-1/2">Transformational Speaking</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-slate-800">
-                  <tr className="hover:bg-slate-800/50 transition-colors">
-                    <td className="p-4 text-slate-400">Exchange information</td>
-                    <td className="p-4 text-slate-300">Inspire and Transform</td>
-                  </tr>
-                  <tr className="hover:bg-slate-800/50 transition-colors">
-                    <td className="p-4 text-slate-400">Data Driven</td>
-                    <td className="p-4 text-slate-300">Story Driven</td>
-                  </tr>
-                  <tr className="hover:bg-slate-800/50 transition-colors">
-                    <td className="p-4 text-slate-400">Task Completion / Efficiency</td>
-                    <td className="p-4 text-slate-300">Transformation / Personal Growth</td>
-                  </tr>
-                  <tr className="hover:bg-slate-800/50 transition-colors">
-                    <td className="p-4 text-slate-400">Process-Oriented</td>
-                    <td className="p-4 text-slate-300">Purpose-Driven</td>
-                  </tr>
-                  <tr className="hover:bg-slate-800/50 transition-colors">
-                    <td className="p-4 text-slate-400">Static, Predictable Energy</td>
-                    <td className="p-4 text-slate-300">Dynamic, Adaptive Energy</td>
-                  </tr>
-                  <tr className="hover:bg-slate-800/50 transition-colors">
-                    <td className="p-4 text-slate-400">Logical-Only Approach</td>
-                    <td className="p-4 text-slate-300">Logic + Emotional Connection</td>
-                  </tr>
-                  <tr className="hover:bg-slate-800/50 transition-colors">
-                    <td className="p-4 text-slate-400">Tells the Audience a Story</td>
-                    <td className="p-4 text-slate-300">Guides the Audience to Live the Story</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div className="bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden shadow-2xl">
+              <div className="grid grid-cols-2 text-xs font-bold uppercase tracking-widest text-slate-500 border-b border-slate-800 bg-slate-900/50">
+                <div className="p-4 flex items-center gap-2">
+                  <span className="text-red-500">✕</span> Transactional Speaking
+                </div>
+                <div className="p-4 flex items-center gap-2 text-amber-500 bg-amber-500/5">
+                  <CheckCircle2 className="w-4 h-4" /> Transformational Speaking
+                </div>
+              </div>
+              <div className="divide-y divide-slate-900">
+                <ComparisonRow label="" oldWay="Exchange information" newWay="Inspire and Transform" />
+                <ComparisonRow label="" oldWay="Data Driven" newWay="Story Driven" />
+                <ComparisonRow label="" oldWay="Task Completion / Efficiency" newWay="Transformation / Personal Growth" />
+                <ComparisonRow label="" oldWay="Process-Oriented" newWay="Purpose-Driven" />
+                <ComparisonRow label="" oldWay="Static, Predictable Energy" newWay="Dynamic, Adaptive Energy" />
+                <ComparisonRow label="" oldWay="Logical-Only Approach" newWay="Logic + Emotional Connection" />
+                <ComparisonRow label="" oldWay="Tells the Audience a Story" newWay="Guides the Audience to Live the Story" />
+              </div>
             </div>
           </div>
 
           {/* WORDS/AUTHENTICITY Category */}
           <div className="mb-12">
             <h3 className="text-2xl font-bold text-amber-500 mb-6 uppercase tracking-wider">Words/Authenticity</h3>
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse">
-                <thead>
-                  <tr className="border-b-2 border-amber-500">
-                    <th className="text-left p-4 text-red-400 font-bold uppercase text-sm tracking-wider w-1/2">Transactional Speaking</th>
-                    <th className="text-left p-4 text-amber-500 font-bold uppercase text-sm tracking-wider w-1/2">Transformational Speaking</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-slate-800">
-                  <tr className="hover:bg-slate-800/50 transition-colors">
-                    <td className="p-4 text-slate-400">Memorize / Script (Recite and Deliver)</td>
-                    <td className="p-4 text-slate-300">Believe It (Internalize and Embody)</td>
-                  </tr>
-                  <tr className="hover:bg-slate-800/50 transition-colors">
-                    <td className="p-4 text-slate-400">Solves Tasks</td>
-                    <td className="p-4 text-slate-300">Inspires Ownership and Action</td>
-                  </tr>
-                  <tr className="hover:bg-slate-800/50 transition-colors">
-                    <td className="p-4 text-slate-400">Underestimate Audience Capacity (Dumb)</td>
-                    <td className="p-4 text-slate-300">Respect Audience Intelligence (Smart)</td>
-                  </tr>
-                  <tr className="hover:bg-slate-800/50 transition-colors">
-                    <td className="p-4 text-slate-400">All About Me (Speaker Centered)</td>
-                    <td className="p-4 text-slate-300">All About You (Audience Centered)</td>
-                  </tr>
-                  <tr className="hover:bg-slate-800/50 transition-colors">
-                    <td className="p-4 text-slate-400">Detached - Professional</td>
-                    <td className="p-4 text-slate-300">Authentic - Relatable</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div className="bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden shadow-2xl">
+              <div className="grid grid-cols-2 text-xs font-bold uppercase tracking-widest text-slate-500 border-b border-slate-800 bg-slate-900/50">
+                <div className="p-4 flex items-center gap-2">
+                  <span className="text-red-500">✕</span> Transactional Speaking
+                </div>
+                <div className="p-4 flex items-center gap-2 text-amber-500 bg-amber-500/5">
+                  <CheckCircle2 className="w-4 h-4" /> Transformational Speaking
+                </div>
+              </div>
+              <div className="divide-y divide-slate-900">
+                <ComparisonRow label="" oldWay="Memorize / Script (Recite and Deliver)" newWay="Believe It (Internalize and Embody)" />
+                <ComparisonRow label="" oldWay="Solves Tasks" newWay="Inspires Ownership and Action" />
+                <ComparisonRow label="" oldWay="Underestimate Audience Capacity (Dumb)" newWay="Respect Audience Intelligence (Smart)" />
+                <ComparisonRow label="" oldWay="All About Me (Speaker Centered)" newWay="All About You (Audience Centered)" />
+                <ComparisonRow label="" oldWay="Detached - Professional" newWay="Authentic - Relatable" />
+              </div>
             </div>
           </div>
 
           {/* RELATIONSHIP Category */}
           <div className="mb-12">
             <h3 className="text-2xl font-bold text-amber-500 mb-6 uppercase tracking-wider">Relationship</h3>
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse">
-                <thead>
-                  <tr className="border-b-2 border-amber-500">
-                    <th className="text-left p-4 text-red-400 font-bold uppercase text-sm tracking-wider w-1/2">Transactional Speaking</th>
-                    <th className="text-left p-4 text-amber-500 font-bold uppercase text-sm tracking-wider w-1/2">Transformational Speaking</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-slate-800">
-                  <tr className="hover:bg-slate-800/50 transition-colors">
-                    <td className="p-4 text-slate-400">Authority Focused</td>
-                    <td className="p-4 text-slate-300">Connection Focused</td>
-                  </tr>
-                  <tr className="hover:bg-slate-800/50 transition-colors">
-                    <td className="p-4 text-slate-400">Speaker Owns the Idea</td>
-                    <td className="p-4 text-slate-300">Audience Feels Ownership of the Idea</td>
-                  </tr>
-                  <tr className="hover:bg-slate-800/50 transition-colors">
-                    <td className="p-4 text-slate-400">Monologue</td>
-                    <td className="p-4 text-slate-300">Dialogue or Interaction</td>
-                  </tr>
-                  <tr className="hover:bg-slate-800/50 transition-colors">
-                    <td className="p-4 text-slate-400">Connection: Detached - Professional</td>
-                    <td className="p-4 text-slate-300">Connection: Authentic - Relatable</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div className="bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden shadow-2xl">
+              <div className="grid grid-cols-2 text-xs font-bold uppercase tracking-widest text-slate-500 border-b border-slate-800 bg-slate-900/50">
+                <div className="p-4 flex items-center gap-2">
+                  <span className="text-red-500">✕</span> Transactional Speaking
+                </div>
+                <div className="p-4 flex items-center gap-2 text-amber-500 bg-amber-500/5">
+                  <CheckCircle2 className="w-4 h-4" /> Transformational Speaking
+                </div>
+              </div>
+              <div className="divide-y divide-slate-900">
+                <ComparisonRow label="" oldWay="Authority Focused" newWay="Connection Focused" />
+                <ComparisonRow label="" oldWay="Speaker Owns the Idea" newWay="Audience Feels Ownership of the Idea" />
+                <ComparisonRow label="" oldWay="Monologue" newWay="Dialogue or Interaction" />
+                <ComparisonRow label="" oldWay="Connection: Detached - Professional" newWay="Connection: Authentic - Relatable" />
+              </div>
             </div>
           </div>
 
           {/* MORE Category */}
           <div>
             <h3 className="text-2xl font-bold text-amber-500 mb-6 uppercase tracking-wider">Impact & Outcomes</h3>
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse">
-                <thead>
-                  <tr className="border-b-2 border-amber-500">
-                    <th className="text-left p-4 text-red-400 font-bold uppercase text-sm tracking-wider w-1/2">Transactional Speaking</th>
-                    <th className="text-left p-4 text-amber-500 font-bold uppercase text-sm tracking-wider w-1/2">Transformational Speaking</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-slate-800">
-                  <tr className="hover:bg-slate-800/50 transition-colors">
-                    <td className="p-4 text-slate-400">No Lasting Impact</td>
-                    <td className="p-4 text-slate-300">Lasting Impact – Memorable</td>
-                  </tr>
-                  <tr className="hover:bg-slate-800/50 transition-colors">
-                    <td className="p-4 text-slate-400">Short-Term Focus</td>
-                    <td className="p-4 text-slate-300">Long-Term Impact</td>
-                  </tr>
-                  <tr className="hover:bg-slate-800/50 transition-colors">
-                    <td className="p-4 text-slate-400">Motivate to Buy</td>
-                    <td className="p-4 text-slate-300">Motivate to Change</td>
-                  </tr>
-                  <tr className="hover:bg-slate-800/50 transition-colors">
-                    <td className="p-4 text-slate-400">No Action</td>
-                    <td className="p-4 text-slate-300">Drives Action</td>
-                  </tr>
-                  <tr className="hover:bg-slate-800/50 transition-colors">
-                    <td className="p-4 text-slate-400">Surface-Level Change</td>
-                    <td className="p-4 text-slate-300">Deep and Sustainable Change</td>
-                  </tr>
-                  <tr className="hover:bg-slate-800/50 transition-colors">
-                    <td className="p-4 text-slate-400">No Gift</td>
-                    <td className="p-4 text-slate-300">A Gift</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div className="bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden shadow-2xl">
+              <div className="grid grid-cols-2 text-xs font-bold uppercase tracking-widest text-slate-500 border-b border-slate-800 bg-slate-900/50">
+                <div className="p-4 flex items-center gap-2">
+                  <span className="text-red-500">✕</span> Transactional Speaking
+                </div>
+                <div className="p-4 flex items-center gap-2 text-amber-500 bg-amber-500/5">
+                  <CheckCircle2 className="w-4 h-4" /> Transformational Speaking
+                </div>
+              </div>
+              <div className="divide-y divide-slate-900">
+                <ComparisonRow label="" oldWay="No Lasting Impact" newWay="Lasting Impact – Memorable" />
+                <ComparisonRow label="" oldWay="Short-Term Focus" newWay="Long-Term Impact" />
+                <ComparisonRow label="" oldWay="Motivate to Buy" newWay="Motivate to Change" />
+                <ComparisonRow label="" oldWay="No Action" newWay="Drives Action" />
+                <ComparisonRow label="" oldWay="Surface-Level Change" newWay="Deep and Sustainable Change" />
+                <ComparisonRow label="" oldWay="No Gift" newWay="A Gift" />
+              </div>
             </div>
           </div>
         </div>
@@ -350,20 +386,70 @@ export default function Workshop2Page() {
             </div>
           </div>
 
-          {/* The Result */}
-          <div className="bg-gradient-to-br from-amber-500/10 to-orange-600/10 rounded-2xl p-8 md:p-12 border border-amber-500/20">
-            <h3 className="text-2xl font-bold text-white mb-4">The result</h3>
-            <p className="text-xl text-slate-300 leading-relaxed mb-4">
-              When leaders use story, people do not just understand.
-            </p>
-            <p className="text-2xl font-bold text-white">
-              They believe.
-            </p>
-            <p className="text-lg text-slate-400 mt-4">
-              Belief is what turns change into progress.
+        </div>
+      </section>
+
+      {/* Workshop Gallery */}
+      <section className="py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-slate-800 text-amber-500 font-bold tracking-wider text-xs uppercase mb-6">
+              <Users className="w-4 h-4" />
+              Workshop in Action
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Experience The Swarm Effect® Workshop
+            </h2>
+            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+              See how executives transform their communication through hands-on practice and real-time coaching
             </p>
           </div>
 
+          {/* Gallery Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {[
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914cc32b4acab3f2457cbf3.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f0003f86941de710770f.png',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a90dfdd201d4aea542.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a90dfdd2fed5aea53e.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a9227ff71bba715258.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a926049e5cf7d5c968.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a926049e6d0ad5c967.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a92f13301024853c22.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a92f13301312853c1c.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a92f13303583853c1e.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a92f13306c3a853c1d.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a92f1330b348853c23.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a93f86946685137776.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a94a60b50608863cf4.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a94a60b5081b863cf8.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a95141a8a53aac79f7.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a95141a8abb9ac79f8.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a95141a8f8a1ac7a02.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a993f9db194e424cdb.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a993f9dbb58f424cdc.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a993f9dbd203424cda.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a9b4acab2deb6b5daf.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a9b4acabaa646b5dae.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a9fb51414f4bb4ce8e.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a9fb514161afb4ce83.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a9fb51417500b4ce81.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a9fb5141bfc4b4ce7f.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a9fb5141caffb4ce80.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a9fb5141d9f6b4ce82.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a9fb5141ead4b4ce84.webp',
+              'https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5aa2f133071d5853c54.webp',
+            ].map((image, idx) => (
+              <div key={idx} className="relative aspect-square rounded-lg overflow-hidden border border-slate-800 hover:border-amber-500/50 transition-all group cursor-pointer">
+                <img 
+                  src={image}
+                  alt={`Workshop moment ${idx + 1}`}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-slate-950/0 group-hover:bg-slate-950/20 transition-colors"></div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
