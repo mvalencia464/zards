@@ -21,12 +21,12 @@ export default function HomePage() {
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter leading-tight mb-6 text-white">
             The Swarm Effect®: <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-600">
-              Turn Complexity Into Command.
+              Win Buy-In Fast.
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto leading-relaxed mb-12">
-            Transform scattered insights into a clear narrative that earns buy-in fast.
+            Build executive confidence and get everyone aligned in days, not months.
           </p>
 
           <button className="px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-600 text-white font-bold rounded-sm hover:scale-105 transition-transform shadow-xl shadow-amber-500/20">
@@ -165,7 +165,7 @@ export default function HomePage() {
             {/* Left Column - Image as Cover with Overlay */}
             <div className="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl min-h-[600px] flex items-end">
               <img 
-                src="https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914cc32b4acab3f2457cbf3.webp"
+                src="https://storage.googleapis.com/msgsndr/aepeJbIzCty08ITHJycY/media/6914f5a95141a8abb9ac79f8.webp"
                 alt="Arthur Zards speaking at a TedX event"
                 className="absolute inset-0 w-full h-full object-cover"
               />
