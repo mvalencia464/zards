@@ -21,12 +21,12 @@ export default function HomePage() {
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter leading-tight mb-6 text-white">
             The Swarm Effect®: <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-600">
-              Designing Strategic Narratives for Buy-In
+              Turn Complexity Into Command.
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto leading-relaxed mb-12">
-            Where strategy meets story
+            Transform scattered insights into a clear narrative that earns buy-in fast.
           </p>
 
           <button className="px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-600 text-white font-bold rounded-sm hover:scale-105 transition-transform shadow-xl shadow-amber-500/20">
